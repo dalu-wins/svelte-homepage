@@ -8,7 +8,7 @@ Minimalist static homepage built with SvelteKit and Flowbite-Svelte.
 
 - Styling: Tailwind CSS + Flowbite-Svelte
 
-- Deployment: Pre-rendered HTML for Nginx/Apache
+- Deployment: Pre-rendered HTML
 
 ## 🚀 Quick Start
 ```Bash
