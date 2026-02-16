@@ -22,6 +22,4 @@ npm run dev
 # Build static files (outputs to /build)
 npm run build
 
-# Deploy to local webserver
-sudo cp -r build/* /var/www/html/
 ```
