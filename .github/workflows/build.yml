@@ -38,7 +38,7 @@ jobs:
             @semantic-release/changelog
 
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: static-site
           path: build/
