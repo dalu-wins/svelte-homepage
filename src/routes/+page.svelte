@@ -54,8 +54,8 @@ function checkCache(node: HTMLImageElement) {
 </Navbar>
 
 <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-center items-stretch gap-12 pt-10 mb-12 w-full" id="profile">
-        <div class="flex-shrink-0 relative w-48 md:w-64 aspect-square">
+    <div class="flex flex-col md:flex-row justify-center gap-12 pt-10 mb-12 w-full items-center" id="profile">
+        <div class="shrink-0 relative w-48 md:w-64 aspect-square">
             {#if !imageLoaded}
                 <div class="absolute inset-0 z-20 flex items-center justify-center bg-gray-50 dark:bg-gray-800 rounded-2xl ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl">
                     <Spinner size="10" color="blue" />
