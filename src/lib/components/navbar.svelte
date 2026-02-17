@@ -3,7 +3,7 @@
 
 </script>
 
-<Navbar class="px-6">
+<Navbar class="p-6">
     <NavBrand href="/">
         <span
             class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
@@ -11,7 +11,7 @@
         >
     </NavBrand>
     <div class="flex items-center gap-2 md:order-2">
-        <NavHamburger />
+        <NavHamburger class="focus-outline-none"/>
         <NavUl class="md:flex-row md:gap-6 px-2">
             <NavLi href="#profile">Profile</NavLi>
             <NavLi href="#projects">Projects</NavLi>
