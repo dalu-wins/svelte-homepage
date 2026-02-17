@@ -2,7 +2,8 @@
     import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, DarkMode } from "flowbite-svelte";
 
 </script>
-<Navbar>
+
+<Navbar class="px-6">
     <NavBrand href="/">
         <span
             class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
