@@ -1,5 +1,6 @@
 <script lang="ts">
     import { curriculum } from "$lib/display/curriculum";
+    import { profile } from "$lib/display/profile";
     import { projects } from "$lib/display/projects";
     import {
         Navbar,
@@ -8,12 +9,14 @@
         NavUl,
         NavHamburger,
         DarkMode,
-        TextPlaceholder,
         Button,
         Timeline,
         TimelineItem,
         Card,
         Badge,
+        Avatar,
+        List,
+        Li,
     } from "flowbite-svelte";
     import {
         Footer,
@@ -21,15 +24,13 @@
         FooterLinkGroup,
         FooterLink,
     } from "flowbite-svelte";
-    import { ArrowRightOutline } from "flowbite-svelte-icons";
+    import { ArrowRightOutline, MailBoxOutline, MessagesOutline } from "flowbite-svelte-icons";
 </script>
 
 <Navbar>
     <NavBrand href="/">
         <span
-            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-            >homepage</span
-        >
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">homepage</span>
     </NavBrand>
     <div class="flex items-center gap-2 md:order-2">
         <NavHamburger />
@@ -43,14 +44,42 @@
 </Navbar>
 
 <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold dark:text-white pt-10 mb-10" id="profile">
-        Profile
-    </h1>
-    <div>
-        <TextPlaceholder class="mb-6" />
-        <Button color="alternative"
-            >Learn more<ArrowRightOutline class="ms-2 h-5 w-5" /></Button
-        >
+    <div class="flex flex-col md:flex-row justify-center items-stretch gap-12 pt-10 mb-12 w-full" id="profile">
+        <div class="flex-shrink-0 flex items-center justify-center">
+            <img 
+                src={profile.avatarUrl} 
+                alt={profile.username}
+                class="rounded-2xl object-cover w-48 md:w-auto md:h-full max-h-[300px] ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl"
+            />
+        </div>
+
+        <div class="max-w-2xl flex flex-col justify-between py-2 space-y-6 text-center md:text-left">
+            <div>
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-3">{profile.username}</h2>
+                <p class="text-lg font-light text-gray-500 dark:text-gray-400 leading-relaxed">
+                    {profile.description}
+                </p>
+            </div>
+
+            <div class="flex justify-center md:justify-start">
+                <List tag="ul" class="space-y-3 text-left">
+                    {#each profile.contacts as contact}
+                        <Li class="flex items-center text-gray-600 dark:text-gray-300">
+                            {#if contact.type === 'mail'}
+                                <MailBoxOutline class="w-5 h-5 me-3 text-primary-600" />
+                            {:else if contact.type === 'discord'}
+                                <MessagesOutline class="w-5 h-5 me-3 text-primary-600" />
+                            {/if}
+                            
+                            <span class="w-20 text-primary-600 font-medium">{contact.label}</span>
+                            <a href={contact.href} class="hover:underline text-blue-600 dark:text-blue-500">
+                                {contact.value}
+                            </a>
+                        </Li>
+                    {/each}
+                </List>
+            </div>
+        </div>
     </div>
 
     <h1 class="text-4xl font-bold dark:text-white pt-10 mb-10" id="projects">
