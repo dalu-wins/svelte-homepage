@@ -10,6 +10,6 @@
           { "path": "static-site.zip", "label": "Build Artifact" }
         ]
       }
-    ],
+    ]
   ]
 }
