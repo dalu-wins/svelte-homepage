@@ -11,6 +11,6 @@
 @plugin "flowbite/plugin";
 
 @theme {
-  --accent: #ff4500;
-  --github-button: #333;
+  --github-button: #2B3137;
+  --github-button-dark: #2DBA4E;
 }
