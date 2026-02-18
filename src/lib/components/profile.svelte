@@ -16,13 +16,13 @@
 </script>
 
 <div
-    class="flex flex-col md:flex-row justify-center gap-12 pt-20 pb-20 w-full items-center"
+    class="flex flex-col md:flex-row justify-center pt-12 gap-6 md:gap-12 w-full items-center lg:items-start lg:justify-start"
     id="profile"
 >
     <div class="shrink-0 relative w-48 md:w-64 aspect-square">
         {#if !imageLoaded}
             <div
-                class="absolute inset-0 z-20 flex items-center justify-center bg-(--bg-card) dark:bg-(--bg-card-dark) rounded-2xl ring-4 ring-(--ring) dark:ring-(--ring-dark) shadow-xl"
+                class="absolute inset-0 z-20 flex items-center justify-center bg-(--bg-card) dark:bg-(--bg-card-dark) rounded-2xl ring-4 ring-(--ring) dark:ring-(--ring-dark) drop-shadow-xl"
             >
                 <Spinner size="10" color="blue" />
             </div>
@@ -33,7 +33,7 @@
             alt={profile.username}
             use:checkCache
             on:load={() => (imageLoaded = true)}
-            class="rounded-2xl object-cover w-full h-full ring-4 bg-(--bg-card) dark:bg-(--bg-card-dark) ring-(--ring) dark:ring-(--ring-dark) shadow-xl transition-opacity duration-500 {imageLoaded
+            class="rounded-2xl object-cover w-full h-full ring-4 bg-(--bg-card) dark:bg-(--bg-card-dark) ring-(--ring) dark:ring-(--ring-dark) drop-shadow-xl transition-opacity duration-500 {imageLoaded
                 ? 'opacity-100'
                 : 'opacity-0'}"
         />
@@ -49,7 +49,7 @@
                 {profile.username}
             </h2>
             <p
-                class="text-lg font-light text-(--secondary-text) dark:text-(--secondary-text-dark) leading-relaxed"
+                class="text-lg font-medium text-(--secondary-text) dark:text-(--secondary-text-dark) leading-relaxed"
             >
                 {profile.description}
             </p>

@@ -2,7 +2,15 @@
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from "flowbite-svelte";
 </script>
 
-<Footer class="m-3 mt-20 bg-(--bg-footer) dark:bg-(--bg-footer-dark) custom-footer">
+<Footer class="relative
+    z-20
+    mt-auto
+    border-t border-white/10
+    bg-white/20 dark:bg-black/20
+    backdrop-blur-md dark:backdrop-blur-2xl
+    custom-footer
+    rounded-none
+    drop-shadow-xl">
     <FooterCopyright href="/" by="Daniil Wins" year={2026}/>
     <FooterLinkGroup
         class="mt-3 flex flex-wrap items-center text-sm sm:mt-0"
@@ -40,5 +48,9 @@
 
     :global(.dark .custom-footer a) {
         color: var(--footer-links-dark) !important;
+    }
+
+    :global(.dark .custom-footer a:hover) {
+        color: var(--footer-links-hover-dark) !important;
     }
 </style>

@@ -9,8 +9,12 @@
     <link rel="icon" href={profile.avatarUrl} />
     <meta 
         name="description" 
-        content="Explore the portfolio of dalu-wins. Featuring mobile and web development projects, a curriculum and contact information." 
+        content="Portfolio of dalu-wins - Computer science student at KIT with a strong interest in mobile and web development." 
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="homepage" />
+    <meta property="og:description" content="Portfolio of dalu-wins - Computer science student at KIT" />
+    <meta property="og:image" content={profile.avatarUrl} />
 </svelte:head>
 
 {@render children()} 

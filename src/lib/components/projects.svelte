@@ -9,7 +9,10 @@
 >
     {#each projects as project}
         <Card
-            class="relative bg-(--bg-card) dark:bg-(--bg-card-dark) p-6 flex flex-col items-center text-center md:items-start md:text-left w-full max-w-sm md:max-w-full border-(--border) dark:border-(--border-dark)"
+            class="relative p-6 flex flex-col items-center text-center md:items-start md:text-left z-20 border-white/10 dark:border-white/10
+                bg-white/20 dark:bg-black/20
+                backdrop-blur-md dark:backdrop-blur-2xl
+                drop-shadow-xl"
         >
             {#if project.badge}
                 <Badge class="absolute top-3 right-3 bg-(--bg-badge) dark:bg-(--bg-badge-dark) text-(--badge) dark:text-(--badge-dark)">

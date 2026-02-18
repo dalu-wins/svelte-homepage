@@ -35,4 +35,16 @@
     :global(.dark .custom-timeline) {
         border-color: var(--timeline-line-dark) !important;
     }
+
+    /* Den Kreis (Marker) ansprechen */
+    :global(.custom-timeline-item .absolute.rounded-full) {
+        background-color: var(--timeline-circle) !important;
+        border-color: var(--timeline-circle-border) !important;
+    }
+
+    /* Dark Mode */
+    :global(.dark .custom-timeline-item .absolute.rounded-full) {
+        background-color: var(--timeline-circle-dark) !important;
+        border-color: var(--timeline-circle-border-dark) !important;
+    }
 </style>

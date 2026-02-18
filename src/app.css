@@ -11,17 +11,17 @@
 @plugin "flowbite/plugin";
 
 @theme {
-  --bg-default: #F9F9F9;
+  --bg-default: #E5E5E5;
   --bg-default-dark: #1B1B1B;
 
   --bg-navbar: #FF000000;
   --bg-navbar-dark: #FF000000;
   --navbar: #000000;
   --navbar-dark: #FFFFFF;
-  --bg-nav-hover: #E0E0E0;
-  --bg-nav-hover-dark: #333333;
-  --bg-hamburger: var(--bg-footer);
-  --bg-hamburger-dark: var(--bg-footer-dark);
+  --bg-nav-hover: #C5C5C5AA;
+  --bg-nav-hover-dark: #00000077;
+  --bg-hamburger: #E0E0E0;
+  --bg-hamburger-dark: #333333;
   --hamburger-border: var(--border);
   --hamburger-border-dark: var(--border-dark);
 
@@ -45,7 +45,7 @@
   --button-border-dark: #555555;
 
   --bg-github-button: #2B3137;
-  --bg-github-button-dark: #2DBA4E;
+  --bg-github-button-dark: #2DBA4E99;
   --github-button: #FFFFFF;
   --github-button-dark: #000000;
 
@@ -53,8 +53,8 @@
   --bg-extra-button-dark: #FF000000;
   --extra-button: #000000;
   --extra-button-dark: #FFFFFF;
-  --extra-button-hover: var(--bg-footer);
-  --extra-button-hover-dark: var(--bg-footer-dark);
+  --extra-button-hover: #E0E0E0;
+  --extra-button-hover-dark: #333333;
 
   --bg-badge: #EDCBF5AA;
   --bg-badge-dark: #784B8BAA;
@@ -67,13 +67,19 @@
   --timeline-title-dark: #FFFFFF;
   --timeline-description: #4B4B4B;
   --timeline-description-dark: #B3B3B3;
-  --timeline-line: #E0E0E0;
+  --timeline-line: #C0C0C0;
   --timeline-line-dark: #333333;
+  --timeline-circle: #C0C0C0;
+  --timeline-circle-dark: #333333;
+  --timeline-circle-border: #C0C0C0;
+  --timeline-circle-border-dark: #333333;
 
-  --bg-footer: #E0E0E0;
-  --bg-footer-dark: #333333;
+  --bg-footer: #E0E0E000;
+  --bg-footer-dark: #33333300;
   --footer-links: #636363;
-  --footer-links-dark: ##9B9B9B;
+  --footer-links-dark: #9B9B9B;
   --footer: #636363;
   --footer-dark: #9B9B9B;
+  --footer-links-hover: #B3B3B3;
+  --footer-links-hover-dark: #FFFFFF;
 }
