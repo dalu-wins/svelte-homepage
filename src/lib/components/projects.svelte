@@ -5,11 +5,11 @@
 </script>
 
 <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center mb-6"
 >
     {#each projects as project}
         <Card
-            class="relative bg-(--bg-card) dark:bg-(--bg-card-dark) p-6 mb-6 flex flex-col items-center text-center md:items-start md:text-left w-full max-w-sm md:max-w-full"
+            class="relative bg-(--bg-card) dark:bg-(--bg-card-dark) p-6 flex flex-col items-center text-center md:items-start md:text-left w-full max-w-sm md:max-w-full border-(--border) dark:border-(--border-dark)"
         >
             {#if project.badge}
                 <Badge class="absolute top-3 right-3 bg-(--bg-badge) dark:bg-(--bg-badge-dark) text-(--badge) dark:text-(--badge-dark)">
@@ -30,7 +30,7 @@
                 <Button
                     href={project.extraButton.url}
                     color="alternative"
-                    class="w-full bg-(--bg-extra-button) dark:bg-(--bg-extra-button-dark) text-(--extra-button) dark:text-(--extra-button-dark)"
+                    class="w-full bg-(--bg-extra-button) dark:bg-(--bg-extra-button-dark) text-(--extra-button) dark:text-(--extra-button-dark) border-(--button-border) dark:border-(--button-border-dark)"
                 >
                     {project.extraButton.label}
                 </Button>

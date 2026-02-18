@@ -22,7 +22,7 @@
     <div class="shrink-0 relative w-48 md:w-64 aspect-square">
         {#if !imageLoaded}
             <div
-                class="absolute inset-0 z-20 flex items-center justify-center bg-gray-50 dark:bg-gray-800 rounded-2xl ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl"
+                class="absolute inset-0 z-20 flex items-center justify-center bg-(--bg-card) dark:bg-(--bg-card-dark) rounded-2xl ring-4 ring-(--ring) dark:ring-(--ring-dark) shadow-xl"
             >
                 <Spinner size="10" color="blue" />
             </div>
@@ -33,7 +33,7 @@
             alt={profile.username}
             use:checkCache
             on:load={() => (imageLoaded = true)}
-            class="rounded-2xl object-cover w-full h-full ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl transition-opacity duration-500 {imageLoaded
+            class="rounded-2xl object-cover w-full h-full ring-4 bg-(--bg-card) dark:bg-(--bg-card-dark) ring-(--ring) dark:ring-(--ring-dark) shadow-xl transition-opacity duration-500 {imageLoaded
                 ? 'opacity-100'
                 : 'opacity-0'}"
         />
