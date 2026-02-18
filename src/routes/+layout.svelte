@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Portfolio</title>
+    <title>homepage</title>
     <link rel="icon" href={profile.avatarUrl} />
     <meta 
         name="description" 
