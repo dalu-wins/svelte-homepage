@@ -6,7 +6,8 @@ export const projects = [
         icon: '📰',
         extraButton: {
             label: 'Download APK',
-            url: 'https://github.com/dalu-wins/sc-news/releases/latest'
+            url: 'https://github.com/dalu-wins/sc-news/releases/latest',
+            external: true
         }
     },
     {
@@ -16,20 +17,21 @@ export const projects = [
         icon: '🔗',
         extraButton: {
             label: 'API Docs',
-            url: 'https://github.com/dalu-wins/sc-news-api/blob/main/README.md'
-        },
+            url: 'https://github.com/dalu-wins/sc-news-api/blob/main/README.md',
+            external: true
+        }
     },
     {
         name: 'Homepage',
         description: 'This exact website that you are currently on. It showcases my profile, projects and curriculum.',
         url: 'https://github.com/dalu-wins/svelte-homepage',
-        icon: '🏠',
+        icon: '🏠'
     },
     {
         name: 'Digital Product Passport',
         description: 'Android application developed as part of a group project at KIT, designed to track the lifecycle of products and promote sustainability.',
         url: 'https://github.com/boebe24/boebe-DPP-Viewer',
         icon: '📦',
-        badge: 'Group Project',
+        badge: 'Group Project'
     }
 ];

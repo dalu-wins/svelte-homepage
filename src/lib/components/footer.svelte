@@ -7,11 +7,17 @@
     <FooterLinkGroup
         class="mt-3 flex flex-wrap items-center text-sm sm:mt-0"
     >
-        <FooterLink href="https://github.com/dalu-wins/svelte-homepage">
+        <FooterLink
+            href="https://github.com/dalu-wins/svelte-homepage"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             sourcecode
         </FooterLink>
         <FooterLink
             href="https://github.com/dalu-wins/svelte-homepage/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
         >
             licensing
         </FooterLink>

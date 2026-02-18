@@ -53,6 +53,8 @@
   --bg-extra-button-dark: #FF000000;
   --extra-button: #000000;
   --extra-button-dark: #FFFFFF;
+  --extra-button-hover: var(--bg-footer);
+  --extra-button-hover-dark: var(--bg-footer-dark);
 
   --bg-badge: #EDCBF5AA;
   --bg-badge-dark: #784B8BAA;
