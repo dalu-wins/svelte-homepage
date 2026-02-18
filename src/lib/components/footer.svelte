@@ -29,7 +29,6 @@
         >
             licensing
         </FooterLink>
-        <FooterLink href="#profile">contact</FooterLink>
     </FooterLinkGroup>
 </Footer>
 
