@@ -1,5 +1,23 @@
 export const projects = [
     {
+        name: 'OnlineTool',
+        description: 'The extended frontend for xDECAF that includes violation summaries. This is being currently developed for my thesis.',
+        url: 'xdecaf.dalu-wins.de',
+        icon: '🔒',
+        extraButton: {
+            label: 'Open in Browser',
+            url: 'https://xdecaf.dalu-wins.de',
+            external: true
+        },
+        badge: 'Bachelor\'s Thesis'
+    },
+    {
+        name: 'Homepage',
+        description: 'This exact website that you are currently on. It showcases my profile, projects and curriculum.',
+        url: 'https://github.com/dalu-wins/svelte-homepage',
+        icon: '🏠'
+    },
+    {
         name: 'SC-News',
         description: 'Companion app for Star Citizen, providing current game version news and updates.',
         url: 'https://github.com/dalu-wins/sc-news',
@@ -11,27 +29,9 @@ export const projects = [
         }
     },
     {
-        name: 'SC-News-API',
-        description: 'API for SC-News, providing version data for the companion app and other potential clients.',
-        url: 'https://github.com/dalu-wins/sc-news-api',
-        icon: '🔗',
-        extraButton: {
-            label: 'API Docs',
-            url: 'https://github.com/dalu-wins/sc-news-api/blob/main/README.md',
-            external: true
-        }
-    },
-    {
-        name: 'Homepage',
-        description: 'This exact website that you are currently on. It showcases my profile, projects and curriculum.',
-        url: 'https://github.com/dalu-wins/svelte-homepage',
-        icon: '🏠'
-    },
-    {
         name: 'Digital Product Passport',
         description: 'Android application developed as part of a group project at KIT, designed to track the lifecycle of products and promote sustainability.',
         url: 'https://github.com/boebe24/boebe-DPP-Viewer',
-        icon: '📦',
-        badge: 'Group Project'
+        icon: '📱'
     }
 ];
