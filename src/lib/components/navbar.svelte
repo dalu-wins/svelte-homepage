@@ -14,7 +14,7 @@
     backdrop-blur-md dark:backdrop-blur-2xl
     border-b border-white/10
     bg-white/20 dark:bg-black/20
-    z-20
+    z-21
     shadow-md"
 >
     <NavBrand href="/">
@@ -27,7 +27,7 @@
             class="hover:bg-(--bg-nav-hover) dark:hover:bg-(--bg-nav-hover-dark)"
         />
         <NavUl
-            class="md:flex-row md:gap-6 px-2"
+            class="md:flex-row px-2"
             ulClass="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium 
                     bg-(--bg-hamburger) dark:bg-(--bg-hamburger-dark)
                     md:bg-transparent md:dark:bg-transparent

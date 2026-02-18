@@ -42,7 +42,15 @@
         color="alternative" 
         size="xs" 
         onclick={toggle}
-        class="opacity-70 hover:opacity-100 border-none bg-transparent dark:bg-transparent focus:ring-0 hover:bg-transparent hover:text-black dark:focus:ring-0 dark:hover:bg-transparent dark:hover:text-white"
+        class="
+        focus:ring-0 dark:focus:ring-0
+        hover:bg-transparent dark:hover:bg-transparent
+        hover:text-black dark:hover:text-white
+        bg-white/20 dark:bg-black/20 
+        backdrop-blur-md dark:backdrop-blur-2xl 
+        border border-white/10 dark:border-white/10
+        shadow-lg"
+        
     >
         {#if visible}
             <EyeSlashOutline class="w-4 h-4 me-2" /> Hide FX
