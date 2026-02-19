@@ -8,7 +8,7 @@
 <div class="flex flex-col min-h-screen relative overflow-hidden">
     <Navbar />
 
-    <main class="container mx-auto px-8 grow flex items-center relative z-10">
+    <main class="container mx-auto p-8 grow flex items-center relative z-10">
         <div class="grid lg:grid-cols-2 w-full items-center">
             <h1 class="text-4xl font-bold pt-4 mb-10 dark:text-white">Curriculum</h1>
             <Curriculum />
