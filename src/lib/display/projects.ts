@@ -1,8 +1,8 @@
 export const projects = [
     {
-        name: 'OnlineTool',
+        name: 'OnlineEditor',
         description: 'The extended frontend for xDECAF that includes violation summaries. This is being currently developed for my thesis.',
-        url: 'xdecaf.dalu-wins.de',
+        url: 'https://github.com/dalu-wins/OnlineEditor',
         icon: '🔒',
         extraButton: {
             label: 'Open in Browser',

@@ -5,8 +5,16 @@
 
 <Timeline class="custom-timeline">
     {#each curriculum as item}
-        <TimelineItem title={item.title} date={item.date} class="custom-timeline-item">
-            <p class="text-base font-normal text-(--timeline-description) dark:text-(--timeline-description-dark)">{item.description}</p>
+        <TimelineItem
+            title={item.title}
+            date={item.date}
+            class="custom-timeline-item"
+        >
+            <p
+                class="text-base font-normal text-(--timeline-description) dark:text-(--timeline-description-dark)"
+            >
+                {item.description}
+            </p>
         </TimelineItem>
     {/each}
 </Timeline>

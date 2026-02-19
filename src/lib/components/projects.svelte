@@ -15,17 +15,23 @@
                 drop-shadow-xl"
         >
             {#if project.badge}
-                <Badge class="absolute top-3 right-3 bg-(--bg-badge) dark:bg-(--bg-badge-dark) text-(--badge) dark:text-(--badge-dark)">
+                <Badge
+                    class="absolute top-3 right-3 bg-(--bg-badge) dark:bg-(--bg-badge-dark) text-(--badge) dark:text-(--badge-dark)"
+                >
                     {project.badge}
                 </Badge>
             {/if}
 
             <div class="text-4xl mb-4">{project.icon}</div>
 
-            <h3 class="text-xl font-bold mb-2 text-(--card-title) dark:text-(--card-title-dark)">
+            <h3
+                class="text-xl font-bold mb-2 text-(--card-title) dark:text-(--card-title-dark)"
+            >
                 {project.name}
             </h3>
-            <p class="text-(--card-text) dark:text-(--card-text-dark) mb-6 grow">
+            <p
+                class="text-(--card-text) dark:text-(--card-text-dark) mb-6 grow"
+            >
                 {project.description}
             </p>
 
@@ -33,7 +39,9 @@
                 <Button
                     href={project.extraButton.url}
                     target={project.extraButton.external ? "_blank" : undefined}
-                    rel={project.extraButton.external ? "noopener noreferrer" : undefined}
+                    rel={project.extraButton.external
+                        ? "noopener noreferrer"
+                        : undefined}
                     color="alternative"
                     class="w-full
                     bg-(--bg-extra-button) dark:bg-(--bg-extra-button-dark
