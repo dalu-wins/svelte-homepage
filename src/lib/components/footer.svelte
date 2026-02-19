@@ -18,7 +18,8 @@
         custom-footer
         rounded-none
         drop-shadow-xl
-        backdrop-saturate-150 dark:backdrop-saturate-150"
+        backdrop-saturate-150 dark:backdrop-saturate-150
+        m-2 rounded-2xl"
 >
     <FooterCopyright href="/" by="Daniil Wins" year={2026} />
     <FooterLinkGroup class="mt-3 flex flex-wrap items-center text-sm sm:mt-0">

@@ -18,7 +18,7 @@
                 backdrop-saturate-150 dark:backdrop-saturate-150"
         >
 
-            <div class="text-4xl mb-4">{project.icon}</div>
+            <div class="text-4xl mb-2">{project.icon}</div>
 
             <h3
                 class="text-xl font-bold mb-2 text-(--card-title) dark:text-(--card-title-dark) pt-4"

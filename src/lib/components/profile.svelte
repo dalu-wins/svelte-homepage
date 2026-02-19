@@ -16,7 +16,15 @@
 </script>
 
 <div
-    class="flex flex-col md:flex-row justify-center pt-12 gap-6 md:gap-12 w-full items-center lg:items-start lg:justify-start z-10 pt-16 pb-6"
+    class="flex flex-col md:flex-row justify-center gap-6 md:gap-12 w-full items-center md:items-center lg:justify-start z-10 mt-16 mb-6
+                bg-white/20 dark:bg-black/20
+                backdrop-blur-md dark:backdrop-blur-2xl
+                drop-shadow-xl
+                border border-white/20 dark:border-white/3
+                ring-1 ring-white/10 dark:ring-white/2
+                backdrop-saturate-150 dark:backdrop-saturate-150
+                px-8 py-6 max-md:py-16
+                rounded-4xl"
 >
     <div class="shrink-0 relative w-48 md:w-64 aspect-square">
         {#if !imageLoaded}
