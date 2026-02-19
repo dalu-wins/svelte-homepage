@@ -11,7 +11,7 @@
 
     <main class="container mx-auto px-8 grow flex flex-col justify-center">
         <Profile />
-        <h1 class="text-4xl font-bold dark:text-white pt-8 mb-8 text-center md:text-start" id="projects">
+        <h1 class="text-4xl font-bold dark:text-white pt-8 mb-8 text-center md:text-start">
             Featured Projects
         </h1>
         <Projects />
