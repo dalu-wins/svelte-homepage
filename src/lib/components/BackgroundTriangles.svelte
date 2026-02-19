@@ -1,24 +1,11 @@
 <script lang="ts">
-    import { Button } from "flowbite-svelte";
-    import { onMount } from "svelte";
-    import { EyeOutline, EyeSlashOutline } from "flowbite-svelte-icons";
+    import { bgSettings } from "$lib/context/state.svelte";
 
     export let count = 8;
-    let visible = true;
 
     function random(seed: number) {
         const x = Math.sin(seed) * 10000;
         return x - Math.floor(x);
-    }
-
-    onMount(() => {
-        const saved = localStorage.getItem("bg-visible");
-        if (saved !== null) visible = saved === "true";
-    });
-
-    function toggle() {
-        visible = !visible;
-        localStorage.setItem("bg-visible", String(visible));
     }
 
     const triangles = Array.from({ length: count }).map((_, i) => {
@@ -39,7 +26,7 @@
     });
 </script>
 
-{#if visible}
+{#if bgSettings.visible}
     <div
         class="fixed inset-0 pointer-events-none z-0 overflow-hidden"
     >

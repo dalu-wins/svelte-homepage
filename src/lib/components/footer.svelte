@@ -1,10 +1,13 @@
 <script>
+    import { bgSettings, toggleBg } from "$lib/context/state.svelte";
     import {
         Footer,
         FooterCopyright,
         FooterLinkGroup,
         FooterLink,
+        Button,
     } from "flowbite-svelte";
+    import { EyeOutline, EyeSlashOutline } from "flowbite-svelte-icons";
 </script>
 
 <Footer
@@ -31,6 +34,24 @@
         >
             licensing
         </FooterLink>
+        <Button
+            pill
+            color="alternative"
+            size="xs"
+            onclick={toggleBg}
+            class="
+            focus:ring-0 dark:focus:ring-0
+            text-(--secondary-text) dark:text-(--secondary-text-dark)
+            hover:text-(--primary-text) dark:hover:text-(--primary-text-dark)
+            glass
+            drop-shadow-md"
+        >
+            {#if bgSettings.visible}
+                <EyeSlashOutline class="w-4 h-4 me-2" /> Hide FX
+            {:else}
+                <EyeOutline class="w-4 h-4 me-2" /> Show FX
+            {/if}
+        </Button>
     </FooterLinkGroup>
 </Footer>
 
