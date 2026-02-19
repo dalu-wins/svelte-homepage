@@ -1,6 +1,7 @@
 <script lang="ts">
     import {profile} from "$lib/display/profile";
     import "../app.css";
+    import "$lib/style/glass.css";
     let { children } = $props();
 </script>
 

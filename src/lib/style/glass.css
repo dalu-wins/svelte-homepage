@@ -1,0 +1,17 @@
+.glass {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(12px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(150%) !important;
+    
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    outline: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .glass {
+    background-color: rgba(0, 0, 0, 0.489) !important;
+    backdrop-filter: blur(40px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(150%) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    outline: 1px solid rgba(255, 255, 255, 0.02) !important;
+}
