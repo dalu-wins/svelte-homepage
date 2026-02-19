@@ -9,23 +9,18 @@
 >
     {#each projects as project}
         <Card
-            class="relative p-6 flex flex-col items-center text-center md:items-start md:text-left z-20 border-white/10 dark:border-white/10
+            class="relative p-8 flex flex-col items-center text-center md:items-start md:text-left z-20
                 bg-white/20 dark:bg-black/20
                 backdrop-blur-md dark:backdrop-blur-2xl
-                drop-shadow-xl"
+                drop-shadow-xl
+                border border-white/20 dark:border-white/3
+                ring-1 ring-white/10 dark:ring-white/2"
         >
-            {#if project.badge}
-                <Badge
-                    class="absolute top-3 right-3 bg-(--bg-badge) dark:bg-(--bg-badge-dark) text-(--badge) dark:text-(--badge-dark)"
-                >
-                    {project.badge}
-                </Badge>
-            {/if}
 
             <div class="text-4xl mb-4">{project.icon}</div>
 
             <h3
-                class="text-xl font-bold mb-2 text-(--card-title) dark:text-(--card-title-dark)"
+                class="text-xl font-bold mb-2 text-(--card-title) dark:text-(--card-title-dark) pt-4"
             >
                 {project.name}
             </h3>

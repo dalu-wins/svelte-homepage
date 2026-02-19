@@ -8,8 +8,7 @@ export const projects = [
             label: 'Open in Browser',
             url: 'https://xdecaf.dalu-wins.de',
             external: true
-        },
-        badge: 'Bachelor\'s Thesis'
+        }
     },
     {
         name: 'Homepage',
