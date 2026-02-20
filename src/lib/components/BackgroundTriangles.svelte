@@ -41,7 +41,7 @@
                             border-right-width:{t.size}px; 
                             border-bottom-width:{t.size * 1.5}px; 
                             border-bottom-color:{t.color}; 
-                            filter: drop-shadow(0 0 10px {t.color});
+                            filter: drop-shadow(0 0 12px {t.color});
                             --rot:{t.rotation}deg;"
                 ></div>
             {/each}

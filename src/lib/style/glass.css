@@ -1,19 +1,23 @@
 .glass {
     background-color: rgba(255, 255, 255, 0.466) !important;
-    backdrop-filter: blur(32px) saturate(150%) !important;
-    -webkit-backdrop-filter: blur(32px) saturate(150%) !important;
+    backdrop-filter: blur(24px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(150%) !important;
     
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     outline: 1px solid rgba(255, 255, 255, 0.1) !important;
+
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.068) !important;
 }
 
 .dark .glass {
-    background-color: rgba(0, 0, 0, 0.726) !important;
-    backdrop-filter: blur(48px) saturate(150%) !important;
-    -webkit-backdrop-filter: blur(48px) saturate(150%) !important;
+    background-color: rgba(0, 0, 0, 0.534) !important;
+    backdrop-filter: blur(40px) saturate(80%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(80%) !important;
 
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
     outline: 1px solid rgba(255, 255, 255, 0.02) !important;
+
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.8) !important;
 }
 
 .glass-button {
@@ -52,9 +56,7 @@
 .glass-button:focus,
 .glass-button:focus-visible,
 .glass-button:active,
-.glass-button:hover,
-.glass:focus,
-.glass:focus-within {
+.glass-button:hover {
     outline: none !important;
     box-shadow: none !important;
     --tw-ring-offset-width: 0px !important;

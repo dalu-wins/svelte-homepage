@@ -1,5 +1,5 @@
 <script>
-	import { Navbar, NavBrand, NavHamburger, DarkMode } from 'flowbite-svelte';
+	import { Navbar, NavBrand, DarkMode } from 'flowbite-svelte';
     import NavLinks from './navLinks.svelte';
     import Hamburger from './Hamburger.svelte';
 
@@ -8,7 +8,7 @@
 </script>
 
 <Navbar
-	class="w-full z-20 glass drop-shadow-md rounded-4xl"
+	class="w-full z-20 glass rounded-4xl"
 >
 	<NavBrand href="/">
 		<span class="self-center text-xl font-semibold whitespace-nowrap m-4 text-(--navbar) dark:text-(--navbar-dark)">
