@@ -34,24 +34,19 @@
         >
             licensing
         </FooterLink>
-        <Button
+        <li><Button
             pill
             color="alternative"
             size="xs"
             onclick={toggleBg}
-            class="
-            focus:ring-0 dark:focus:ring-0
-            text-(--secondary-text) dark:text-(--secondary-text-dark)
-            hover:text-(--primary-text) dark:hover:text-(--primary-text-dark)
-            glass
-            drop-shadow-md"
+            class="glass-button"
         >
             {#if bgSettings.visible}
                 <EyeSlashOutline class="w-4 h-4 me-2" /> Hide FX
             {:else}
                 <EyeOutline class="w-4 h-4 me-2" /> Show FX
             {/if}
-        </Button>
+        </Button></li>
     </FooterLinkGroup>
 </Footer>
 

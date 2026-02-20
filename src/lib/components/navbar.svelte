@@ -17,9 +17,9 @@
 
 	<div class="flex items-center gap-2 md:order-2">
 		<DarkMode
-			class="hover:bg-(--bg-nav-hover) dark:hover:bg-(--bg-nav-hover-dark) hover:text-black dark:hover:text-white text-(--secondary-text) dark:text-(--secondary-text-dark) mr-0 md:mr-6"
+			class="glass-button mr-0 md:mr-6"
 		/>
-		<NavHamburger onclick={toggleMenu} class="md:hidden mr-6" />
+		<NavHamburger onclick={toggleMenu} class="md:hidden glass-button mr-6 z-15" />
 	</div>
 
 	<NavLinks {menuOpen} />

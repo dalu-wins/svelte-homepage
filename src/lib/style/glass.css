@@ -15,3 +15,59 @@
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
     outline: 1px solid rgba(255, 255, 255, 0.02) !important;
 }
+
+.glass-button {
+    color: var(--secondary-text) !important;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06)) !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    
+    background-color: rgba(255, 255, 255, 0.472) !important;
+    
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .glass-button {
+    color: var(--secondary-text-dark) !important;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06)) !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Remove all flowbite specific effects */
+
+.glass-button, 
+.glass {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.glass-button:focus,
+.glass-button:focus-visible,
+.glass-button:active,
+.glass-button:hover,
+.glass:focus,
+.glass:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+    --tw-ring-offset-width: 0px !important;
+    --tw-ring-width: 0px !important;
+    --tw-ring-color: transparent !important;
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.472) !important;
+    color: var(--primary-text) !important;
+}
+
+.dark .glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--primary-text-dark) !important;
+}

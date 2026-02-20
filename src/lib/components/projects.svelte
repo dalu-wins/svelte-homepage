@@ -33,13 +33,8 @@
                     rel={project.extraButton.external
                         ? "noopener noreferrer"
                         : undefined}
-                    color="alternative"
                     class="w-full
-                    bg-(--bg-extra-button) dark:bg-(--bg-extra-button-dark
-                     text-(--extra-button) dark:text-(--extra-button-dark)
-                     border-(--button-border) dark:border-(--button-border-dark)
-                     hover:bg-(--extra-button-hover) dark:hover:bg-(--extra-button-hover-dark)
-                     focus:ring-0"
+                    glass-button"
                 >
                     {project.extraButton.label}
                 </Button>
