@@ -15,7 +15,6 @@
         z-20
         mt-auto
         glass
-        drop-shadow-md
         rounded-4xl
         px-8 py-6"
 >
