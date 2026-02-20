@@ -16,7 +16,8 @@
         mt-auto
         glass
         drop-shadow-md
-        rounded-4xl"
+        rounded-4xl
+        px-8 py-6"
 >
     <FooterCopyright href="/" by="Daniil Wins" year={2026} />
     <FooterLinkGroup class="mt-3 flex flex-wrap items-center text-sm sm:mt-0">
