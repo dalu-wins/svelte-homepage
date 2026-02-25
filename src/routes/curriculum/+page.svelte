@@ -7,10 +7,10 @@
 
 <BackgroundTriangles count={10} />
 
-<div class="flex flex-col min-h-screen relative overflow-hidden container mx-auto grow gap-4 p-4">
+<div class="flex flex-col min-h-screen relative overflow-hidden container mx-auto grow gap-2 p-2 md:gap-4 md:p-4">
     <Navbar />
 
-    <main class="grow flex flex-col gap-3 md:gap-6">
+    <main class="grow flex flex-col gap-2 md:gap-4">
         <Curriculum />
     </main>
 
