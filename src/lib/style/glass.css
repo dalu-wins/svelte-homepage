@@ -1,75 +1,93 @@
 .glass {
-    background-color: rgba(255, 255, 255, 0.466) !important;
-    backdrop-filter: blur(24px) saturate(150%) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(150%) !important;
+    background-color: rgba(255, 255, 255, 0.466);
+    backdrop-filter: blur(24px) saturate(150%);
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
     
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    outline: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.1);
 
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.068) !important;
 }
 
 .dark .glass {
-    background-color: rgba(0, 0, 0, 0.534) !important;
-    backdrop-filter: blur(40px) saturate(80%) !important;
-    -webkit-backdrop-filter: blur(40px) saturate(80%) !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.1);
 
-    border: 1px solid rgba(255, 255, 255, 0.05) !important;
-    outline: 1px solid rgba(255, 255, 255, 0.02) !important;
+}
 
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.8) !important;
+.dark .glass {
+    background-color: rgba(0, 0, 0, 0.489);
+    backdrop-filter: blur(40px) saturate(150%);
+    -webkit-backdrop-filter: blur(40px) saturate(150%);
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    outline: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 .glass-button {
-    color: var(--secondary-text) !important;
-    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06)) !important;
+    color: var(--secondary-text);
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     
-    background-color: rgba(255, 255, 255, 0.472) !important;
+    background-color: rgba(255, 255, 255, 0.472);
     
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dark .glass-button {
-    color: var(--secondary-text-dark) !important;
-    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06)) !important;
+    color: var(--secondary-text-dark);
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     
-    background-color: rgba(255, 255, 255, 0.05) !important;
+    background-color: rgba(255, 255, 255, 0.05);
     
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Remove all flowbite specific effects */
+.glass-button-gh {
+    color: var(--primary-text-dark);
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 
-.glass-button, 
-.glass .dark {
-    outline: none !important;
-    box-shadow: none !important;
-    -webkit-tap-highlight-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    
+    background-color: rgba(61, 111, 44, 0.804);
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.glass-button:focus,
-.glass-button:focus-visible,
-.glass-button:active,
-.glass-button:hover {
-    outline: none !important;
-    box-shadow: none !important;
-    --tw-ring-offset-width: 0px !important;
-    --tw-ring-width: 0px !important;
-    --tw-ring-color: transparent !important;
+.dark .glass-button-gh {
+    color: var(--primary-text-dark);
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    
+    background-color: rgba(97, 178, 70, 0.477);
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.glass-button:hover {
-    background-color: rgba(255, 255, 255, 0.472) !important;
-    color: var(--primary-text) !important;
+.glass-text {
+    color: var(--primary-text);
 }
 
-.dark .glass-button:hover {
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    color: var(--primary-text-dark) !important;
+.dark .glass-text {
+        color: var(--primary-text-dark);
+}
+
+
+.glass-text-secondary {
+    color: var(--secondary-text);
+}
+
+.dark .glass-text-secondary {
+        color: var(--secondary-text-dark);
 }
