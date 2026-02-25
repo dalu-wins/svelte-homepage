@@ -20,6 +20,8 @@
         {alt}
         use:checkCache
         onload={() => (imageLoaded = true)}
-        class="rounded-2xl object-cover w-full h-full drop-shadow-xl transition-opacity duration-500 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
+        class="rounded-2xl object-cover w-full h-full drop-shadow-xl
+                ring-6 ring-(--image-ring) dark:ring-(--image-ring-dark)
+                transition-opacity duration-500 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
     />
 </div>
