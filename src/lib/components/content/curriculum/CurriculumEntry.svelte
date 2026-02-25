@@ -16,7 +16,7 @@
 </script>
 
 <li class="relative ml-6 mb-10 last:mb-0">
-    <span class="absolute -left-[31px] mt-1.5 h-3 w-3 rounded-full
+    <span class="absolute -left-7.75 mt-1.5 h-3 w-3 rounded-full
                  bg-(--timeline-circle) border-(--timeline-circle-border)
                  dark:bg-(--timeline-circle-dark) dark:border-(--timeline-circle-border-dark)
                  z-10">
@@ -28,10 +28,10 @@
 
     <p class="glass-text-secondary">{description}</p>
 
-    <div class="absolute -left-12 top-1.5 -translate-x-full hidden md:flex flex-col items-end gap-2">
+    <div class="absolute -left-12 top-1.5 -translate-x-full flex flex-col items-end gap-2">
          <time class="text-xs font-mono text-(--timeline-date) dark:text-(--timeline-date-dark)">{date}</time>
          {#if badge}
-            <span class="px-2 py-0.5 text-[10px] font-bold rounded-full border {currentStyle}">{badge.toUpperCase()}</span>
+            <span class="px-2 py-0.5 text-2xs font-bold rounded-full border {currentStyle}">{badge.toUpperCase()}</span>
          {/if}
     </div>
 </li>
