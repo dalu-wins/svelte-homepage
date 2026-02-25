@@ -3,7 +3,7 @@
     import { ArrowRightOutline } from "flowbite-svelte-icons";
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 w-full justify-items-center z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 md:gap-4 w-full justify-items-center z-10">
     {#each projects as project}
         <div class="relative p-8 flex flex-col items-center text-center md:items-start md:text-left z-20
                     glass drop-shadow-md max-w-none rounded-4xl w-full gap-3">

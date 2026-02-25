@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar from "$lib/components/nav/Navbar.svelte";
     import Footer from "$lib/components/footer/Footer.svelte";
-    import BackgroundTriangles from "$lib/components/effect/BackgroundTriangles.svelte";
+    import BackgroundTriangles from "$lib/components/background/BackgroundTriangles.svelte";
     import Curriculum from "$lib/components/content/curriculum/Curriculum.svelte";
 </script>
 

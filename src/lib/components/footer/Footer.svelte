@@ -1,6 +1,6 @@
 <script>
     import FooterLink from "./FooterLink.svelte";
-    import BackgroundToggle from "../effect/BackgroundToggle.svelte";
+    import BackgroundToggle from "../background/BackgroundToggle.svelte";
 </script>
 
 <footer class="relative z-20 mt-auto glass drop-shadow-md rounded-4xl p-4 md:flex md:items-center md:justify-between px-6 py-4">

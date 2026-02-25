@@ -1,10 +1,11 @@
 <script>
-    import { DarkMode } from 'flowbite-svelte';
+    import DarkMode from "../theme/DarkMode.svelte";
+
     let { toggleMenu } = $props();
 </script>
 
 <div class="flex items-center gap-4 md:order-2">
-    <DarkMode class="glass-button" />
+    <DarkMode />
     <button 
         onclick={toggleMenu} 
         class="md:hidden glass-button p-2 rounded-2xl"
