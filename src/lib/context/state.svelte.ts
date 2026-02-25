@@ -1,5 +1,5 @@
 export const bgSettings = $state({
-    visible: true
+    visible: false
 });
 
 export const themeSettings = $state({
@@ -10,7 +10,12 @@ export const themeSettings = $state({
 
 if (typeof window !== 'undefined') {
     const savedBg = localStorage.getItem("bg-visible");
-    if (savedBg !== null) bgSettings.visible = savedBg === "true";
+    
+    if (savedBg !== null) {
+        bgSettings.visible = savedBg === "true";
+    } else {
+        bgSettings.visible = window.innerWidth >= 768;
+    }
 }
 
 function applyTheme(dark: boolean) {
