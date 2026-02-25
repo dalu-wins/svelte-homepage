@@ -14,7 +14,7 @@
                 {project.name}
             </h3>
             
-            <p class="glass-text-secondary grow">
+            <p class="glass-text-secondary grow mb-3">
                 {project.description}
             </p>
 

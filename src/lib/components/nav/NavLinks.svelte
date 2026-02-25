@@ -18,7 +18,8 @@
                     class="block py-2 rounded md:p-0 
                            {isActive 
                              ? 'text-black dark:text-white' 
-                             : 'text-(--secondary-text) dark:text-(--secondary-text-dark)'}"
+                             : 'text-(--secondary-text) dark:text-(--secondary-text-dark)'}
+                             hover:underline"
                     aria-current={isActive ? 'page' : undefined}
                 >
                     {link.name}
