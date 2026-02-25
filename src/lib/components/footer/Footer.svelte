@@ -3,7 +3,7 @@
     import BackgroundToggle from "../effect/BackgroundToggle.svelte";
 </script>
 
-<footer class="relative z-20 mt-auto glass drop-shadow-md rounded-4xl p-4 md:flex md:items-center md:justify-between px-6 py-6">
+<footer class="relative z-20 mt-auto glass drop-shadow-md rounded-4xl p-4 md:flex md:items-center md:justify-between px-6 py-4">
     <span class="text-sm sm:text-center glass-text-secondary">
         © 2026 <a href="/" class="hover:underline">Daniil Wins</a>
     </span>

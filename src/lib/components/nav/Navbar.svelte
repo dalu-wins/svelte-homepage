@@ -7,7 +7,7 @@
     const toggleMenu = () => (menuOpen = !menuOpen);
 </script>
 
-<nav class="w-full z-20 glass drop-shadow-md rounded-4xl px-6 py-6">
+<nav class="w-full z-20 glass drop-shadow-md rounded-4xl px-6 py-4">
     <div class="flex flex-wrap items-center justify-between gap-6">
         
         <NavBrand />
