@@ -4,7 +4,7 @@
 
     const links = [
         { name: 'Portfolio', href: '/' },
-        { name: 'Curriculum', href: '/curriculum' }
+        { name: 'Curriculum', href: '/curriculum/' }
     ];
 </script>
 
