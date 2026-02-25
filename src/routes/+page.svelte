@@ -3,7 +3,7 @@
     import Projects from "$lib/components/content/projects/Projects.svelte";
     import Navbar from "$lib/components/nav/Navbar.svelte";
     import Footer from "$lib/components/footer/Footer.svelte";
-    import BackgroundTriangles from "$lib/components/BackgroundTriangles.svelte";
+    import BackgroundTriangles from "$lib/components/effect/BackgroundTriangles.svelte";
 </script>
 
 <BackgroundTriangles count={10} />
