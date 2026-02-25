@@ -3,19 +3,14 @@ export const bgSettings = $state({
 });
 
 export const themeSettings = $state({
-    isDark: false
+    isDark: typeof document !== 'undefined' 
+        ? document.documentElement.classList.contains('dark') 
+        : false
 });
 
 if (typeof window !== 'undefined') {
     const savedBg = localStorage.getItem("bg-visible");
     if (savedBg !== null) bgSettings.visible = savedBg === "true";
-
-    const savedTheme = localStorage.getItem("color-theme");
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    const isDark = savedTheme === 'dark' || (savedTheme === null && prefersDark);
-    themeSettings.isDark = isDark;
-    applyTheme(isDark);
 }
 
 function applyTheme(dark: boolean) {

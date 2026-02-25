@@ -8,14 +8,30 @@
 <svelte:head>
     <title>homepage</title>
     <link rel="icon" href={profile.avatarUrl} />
+    
     <meta 
         name="description" 
         content="Portfolio of dalu-wins - Computer science student at KIT with a strong interest in mobile and web development." 
     />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="homepage" />
     <meta property="og:description" content="Portfolio of dalu-wins - Computer science student at KIT" />
     <meta property="og:image" content={profile.avatarUrl} />
+
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('color-theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const isDark = savedTheme === 'dark' || (savedTheme === null && prefersDark);
+            
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        })();
+    </script>
 </svelte:head>
 
 {@render children()} 
